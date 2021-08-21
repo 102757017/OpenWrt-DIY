@@ -24,3 +24,9 @@ rm -rf ../lean/luci-theme-argon
 # Svn checkout packages from immortalwrt's repository
 git clone --depth=1 https://github.com/immortalwrt/packages -b openwrt-18.06 packages
 git clone --depth=1 https://github.com/immortalwrt/luci -b openwrt-18.06 luci
+
+
+git clone --depth=1  https://github.com/destan19/OpenAppFilter.git ./package/OpenAppFilter
+mv ./package/OpenAppFilter/oaf ./package/oaf
+mv ./package/OpenAppFilter/luci-app-oaf ./package/luci-app-oaf
+mv ./package/OpenAppFilter/open-app-filter ./package/open-app-filter
